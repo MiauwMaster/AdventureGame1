@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="location.c" />
+    <ClCompile Include="action.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="object.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="location.h" />
+    <ClInclude Include="action.h" />
     <ClInclude Include="object.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
