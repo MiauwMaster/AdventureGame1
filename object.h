@@ -21,6 +21,7 @@ extern OBJECT objects[];
 #define garden		(objects + 6)
 #define treehouse	(objects + 7)
 #define shed		(objects + 8)
-#define scooter		(objects + 9)	
+#define scooter		(objects + 9)
+#define coin		(objects + 10)
 
-#define endOfObjects	(objects + 10)
+#define endOfObjects	(objects + 11)

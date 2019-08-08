@@ -24,11 +24,10 @@ int getDirection(const char* direction) {
 // Globals
 
 const char input[MAX_INPUT_SIZE];
-
 // Functions
 
 int getInput() {
-	printf("\n> ");
+	printf("\n > ");
 	return fgets(input, MAX_INPUT_SIZE, stdin) != NULL;
 }
 
@@ -120,7 +119,9 @@ int parseInput() {
 }
 
 int main(void) {
-	printf("Welcome to our little adventure!\n\n");
+	printf("Oh damn! You're on the wrong bus!\n\
+You have no idea where this one is going and this late at night you are in no mood to find out either!\n\
+Better to get off at the first stop and take the next one back I guess!\n\n");
 	look();
 	while (getInput() && parseInput());
 	return 0;
