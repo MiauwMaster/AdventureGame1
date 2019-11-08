@@ -83,7 +83,7 @@ void listItemsInLocation(const char* objectName, myBool descriptive) {
 	if (locationToList != NULL) {
 		for (obj = objects; obj < endOfObjects; obj++) {
 			if (obj->location == locationToList) {
-				if (obj->name != "Yourself") {
+				if (strncmp(obj->name, "Yourself", 15) != 0) {
 					if (descriptive) {
 						printf("%s", obj->description);
 					}
@@ -97,6 +97,6 @@ void listItemsInLocation(const char* objectName, myBool descriptive) {
 }
 
 void look() {
-	printf(player->location->description);
+	printf("%s", player->location->description);
 	listItemsInLocation(player->location->name, true);
 }

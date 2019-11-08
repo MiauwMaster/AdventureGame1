@@ -1,11 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <string.h>
 #include "action.h"
 #include "object.h"
 
-#define MAX_INPUT_SIZE 100
+#define MAX_INPUT_SIZE 20
 
 // Directions
 int getDirection(const char* direction) {
@@ -23,7 +21,7 @@ int getDirection(const char* direction) {
 
 // Globals
 
-const char input[MAX_INPUT_SIZE];
+char* input;
 // Functions
 
 int getInput() {
